@@ -1,0 +1,37 @@
+.appButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 8px;
+  border: 2px solid white;
+  background-color: transparent;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 16px;
+  text-align: center;
+  padding: 2px 40px 2px 40px;
+  border-radius: 4px;
+}
+.appButtonText {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  justify-content: left;
+  align-items: left;
+  color: white;
+}
+.appIcon {
+padding-top: 10px;}
+.appName {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  text-align: left;
+  color: white;
+}
+.appButton :hover{
+    cursor: pointer;
+}

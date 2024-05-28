@@ -1,0 +1,25 @@
+.footerList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footerListTitle {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 32px;
+  text-align: left;
+  color: var(--footer-yellow, #ffb703);
+}
+.footerListContent {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family: Poppins;
+  text-align: left;
+  color: white;
+}
+.footerListContent:hover {
+  color: var(--footer-yellow, #ffb703);
+  cursor: pointer;
+}

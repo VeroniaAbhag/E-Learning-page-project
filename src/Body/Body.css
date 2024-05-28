@@ -1,0 +1,144 @@
+.body {
+  text-align: center;
+  z-index: 0;
+}
+/* .sliderSectionContent{
+  display: flex;
+  flex-direction: row;
+  gap: 72px;
+  align-items: center;
+  padding: 80px 100px 80px 100px;
+  z-index: 1;
+}
+.sliderSection {
+  background-color: #0e5269;
+  background-image: url("../assets/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+  z-index: -1;
+} */
+.sliderSection {
+  position: relative;
+  overflow: hidden; /* Add this to contain the background image */
+}
+
+.sliderSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0e5269;
+  opacity: 0.9;
+  z-index: -2;
+}
+
+.sliderSection::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.sliderSectionContent {
+  display: flex;
+  flex-direction: row;
+  gap: 72px;
+  align-items: center;
+  padding: 80px 100px 80px 100px;
+  position: relative;
+  z-index: 1;
+}
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  flex-grow: 4;
+}
+.sliderImage {
+  width: 100%;
+}
+.sliderTitle {
+  height: 85px;
+  font-family: Poppins;
+  font-size: 40px;
+  width: fit-content;
+  font-weight: 700;
+  color: white;
+}
+.sliderArrows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 100px;
+  width: 50px;
+  height: 50px;
+  padding: 2px;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+  }
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+.cardsSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 150px 80px 150px;
+  gap: 25px;
+}
+.cardSectionTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 80px 0px 80px;
+}
+.seeMoreButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  padding: 5px 25px 5px 25px;
+  border-radius: 4px;
+  vertical-align: middle;
+  background-color: white;
+  color: #126783;
+  border: 0;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+}
+.seeMoreButton:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.instructorCardSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 150px 80px 150px;
+  gap: 25px;
+}

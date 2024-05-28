@@ -1,0 +1,65 @@
+.homeSection {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+  padding: 80px 120px 80px 120px;
+}
+
+.imageSection {
+  height: 85vh;
+}
+
+.textSection {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 60%;
+}
+
+.textSectionTitle {
+  font-family: Poppins;
+  width: 120%;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 80px;
+  text-align: left;
+  color: var(--primary-button-button-color, #126783);
+}
+.textSectionTitleHighlight {
+  font-family: Poppins;
+  font-size: 60px;
+  font-weight: 800;
+  text-align: left;
+  color: var(--nav-bar-nav-bar-hovered, #ffb703);
+}
+.textSectionSubTitle {
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: left;
+  color: #023047;
+}
+.textSectionDescription {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+  line-height: 25px;
+  color: #6c757d;
+}
+.aboutTitle {
+  font-family: Poppins;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 45px;
+  text-align: left;
+  color: #023047;
+}
+.appSubTitle {
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: left;
+  color: #126783;
+}
+
